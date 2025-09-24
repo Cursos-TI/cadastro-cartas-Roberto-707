@@ -14,7 +14,7 @@ int main() {
     int população = 1300000000;
     float area = 15000000;
     float PIB = 130000000;
-    int pontosturisticos = 5;
+    int pontosturisticos = 6;
 
 
   // Área para exibição dos dados da cidade
