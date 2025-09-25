@@ -1,30 +1,67 @@
 #include <stdio.h>
+#include <string.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
-int main() {
+
+
+
+typedef struct {
+
+ 
   // Área para definição das variáveis para armazenar as propriedades das cidades
-    printf("Desafio SuperTrunfo\n");
+   
   // Área para entrada de dados
-    char estado [10] = "Pernambuco";
-    char codigo [4] = "A01";
-    char cidade [8] = "Recife";
-    long long população = 1300000000;
-    double area = 15000000;
-    double PIB = 130000000;
-    int pontos_turisticos = 5;
+    char estado [50]; 
+    char codigo [10];
+    char cidade [50];
+    long long populaçao; 
+    double area; 
+    double pib; 
+    int pontos_turisticos; 
+ } CartaSuperTrunfo;
+
+ int main() {
+
+  CartaSuperTrunfo carta_do_usuario;
+
+  printf("--- CRIAR NOVA CARTA SUPER TRUNFO ---\n\n");
+
+  printf("Digite o estado: ");
+  scanf("%s", carta_do_usuario.estado);
+
+  printf("Digite a cidade: ");
+  scanf("%s", carta_do_usuario.cidade);
+
+  printf("digite a população: ");
+  scanf("%lld", &carta_do_usuario.populaçao);
+
+  printf("Digite area (em km2): ");
+  scanf("%lf", &carta_do_usuario.area);
+
+  printf("Digite o pib: ");
+  scanf("%lf", &carta_do_usuario.pib);
+
+  printf("Digite o numero de pontos turisticos: ");
+  scanf ("%d", &carta_do_usuario.pontos_turisticos);
+
+
+ 
+
 
 
   // Área para exibição dos dados da cidade
-    printf("O estado é: %s\n", estado);
-    printf("o codigo da carta é: %s\n", codigo);
-    printf("A cidade é: s%\n", cidade);
-    printf("A população é: %lld\n", população);
-    printf("A area é: %.2 km2\n", area);
-    printf("O PIB é: %.2f\n", PIB);
-    printf("O numero de pontos turisticos é: %d\n");
+printf("\n--- CARTA SUPER TRUNFO CRIADA ---\n");
+
+    printf("O estado é: %s\n", carta_do_usuario.estado);
+    printf("o codigo da carta é: %s\n", carta_do_usuario.codigo);
+    printf("A cidade é: %s\n", carta_do_usuario.cidade);
+    printf("A população é: %lld\n", carta_do_usuario.populaçao);
+    printf("A area é: %.2f km2\n", carta_do_usuario.area);
+    printf("O PIB é: %.2f\n", carta_do_usuario.pib);
+    printf("O numero de pontos turisticos é: %d\n", carta_do_usuario.pontos_turisticos);
     
 
 
