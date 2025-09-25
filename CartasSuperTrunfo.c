@@ -38,16 +38,22 @@ typedef struct {
   printf("digite a população: ");
   scanf("%lld", &carta_do_usuario.populaçao);
 
+  getchar();
+
   printf("Digite area (em km2): ");
   scanf("%lf", &carta_do_usuario.area);
+
+  getchar();
 
   printf("Digite o pib: ");
   scanf("%lf", &carta_do_usuario.pib);
 
+  getchar();
+
   printf("Digite o numero de pontos turisticos: ");
-  scanf ("%d", &carta_do_usuario.pontos_turisticos);
+  scanf("%d", &carta_do_usuario.pontos_turisticos);
 
-
+  getchar();
  
 
 
