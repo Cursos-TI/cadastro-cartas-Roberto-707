@@ -126,29 +126,34 @@ int main() {
   printf("\n RESULTADO DA COMPARAÇÃO DAS CARTAS \n");
 
 if( populaçao > populaçao2){
-  printf("carta sc venceu\n");
+  printf("carta 1 venceu\n");
 }else{
-  printf("carta sp venceu\n");}
+  printf("carta 2 venceu\n");}
 
   if( area_em_km2 > area_em_km22){
-  printf("carta sc venceu\n");
+  printf("carta 1 venceu\n");
 }else{
-  printf("carta sp venceu\n");}
+  printf("carta 2 venceu\n");}
 
   if( pib > pib2){
-  printf("carta sc venceu\n");
+  printf("carta 1 venceu\n");
 }else{
-  printf("carta sp venceu\n");}
+  printf("carta 2 venceu\n");}
 
   if( densidade_populacional < densidade_populacional2){
-  printf("carta sc venceu\n");
+  printf("carta 1 venceu\n");
 }else{
-  printf("carta sp venceu\n");}
+  printf("carta 2 venceu\n");}
 
   if( pib_per_capita > pib_per_capita2){
-  printf("carta sc venceu\n");
+  printf("carta 1 venceu\n");
 }else{
-  printf("carta sp venceu\n");}
+  printf("carta 2 venceu\n");}
+
+  if( super_poder > super_poder2){
+  printf("carta 1 venceu\n");
+}else{
+  printf("carta 2 venceu\n");}
 
 
   
